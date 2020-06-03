@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="shortcut icon" href="#" />
+		<!--<link href="meetingRoom/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet" />
+		<link href="meetingRoom/DataTables-1.10.15/media/css/dataTables.bootstrap.css" rel="stylesheet"/>
+		<link href="meetingRoom/jquery-confirm-v3.3.4/css/jquery-confirm.css" rel="stylesheet"/>
+		<script src="../jQuery/js/jquery-3.3.1.js"></script>
+		<script src="../DataTables-1.10.15/media/js/jquery.dataTables.min.js"></script>
+		<script src="../JS/dataTable_setting.js"></script>
+		<script src="meetingRoom/DataTables-1.10.15/media/js/dataTables.bootstrap4.min.js"></script>
+		<script src="meetingRoom/jquery-confirm-v3.3.4/js/jquery-confirm.js"></script>
+		<script src="meetingRoom/JS/pageSize.js"></script>
+		<script src="meetingRoom/JS/utility.js"></script>
+		<script src="meetingRoom/JS/data_delete.js"></script>-->
+
+   
+	</head>
+  
+	<body>
+		<div id="bodyDiv">
+			<div class="headline">
+				<div style="padding:20px 0 0 14px;">
+					<a  ng-click="goBack()">
+						<button type="button" class="btn btn-secondary">&nbsp;&nbsp;返&nbsp;&nbsp;回&nbsp;&nbsp;</button>
+					</a>
+				</div>
+				<h3 align="center">我的预定</h3>
+			</div>
+			<hr />
+
+			<table class="table table-bordered table-hover" id="table1" data-plugin="table" data-href="/portal/MettingRoom/GetMyAllMettingRoom_reserve">
+				<thead>
+					<tr data-close>
+						<th data-unsortable data-width="30px">序号</th>
+						<th data-name="UserName" data-chinese="chinese-sort" data-width="70">姓名</th>
+						<th data-name="UserBuMen" data-unsortable data-width="350px">部门</th>
+						<th data-name="MettingName"  data-unsortable data-width="100px">会议室</th>
+						<th data-name="Reserve_StartTime">开始时间</th>
+						<th data-name="Reserve_EndTime">结束时间</th>
+						<th data-unsortable data-width="50px">操作
+							<div data-template style="display:none;">
+								<button type="button" class="btn btn-danger" data-trigger-refresh-target="#table1" data-delete="/portal/MettingRoom/CancelMettingRoom_reserve?reserveObjectId={{ObjectId}}">取消</button>
+							</div>
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+	</body>
+
+  
+</html>

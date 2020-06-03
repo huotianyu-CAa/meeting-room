@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="shortcut icon" href="#" />
+		<link href="meetingRoom/CSS/showPageCss.css" type="text/css" rel="stylesheet" />
+		<link href="meetingRoom/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="meetingRoom/datepicker/datepicker/css/datepicker.css" rel="stylesheet" />
+		<!--<script src="meetingTest/jQuery/js/jquery-3.3.1.js"></script>
+		<script src="meetingRoom/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script src="../JS/bookingTable.js"></script>-->
+		<script src="meetingRoom/datepicker/datepicker/js/datepicker.all.js"></script>
+		<script src="meetingRoom/datepicker/datepicker/js/plugins/moment.min.js"></script>
+		<script src="meetingRoom/JS/pageSize.js"></script>
+		<script src="meetingRoom/JS/utility.js"></script>
+	</head>
+
+	<body>
+		<canvas id="line" style="display: none;"></canvas>
+		<div id="bodyDiv">
+			<!-- 标题 -->
+			<div class="headline">
+				<div class="caption">
+					<a ng-click="LookMyReserve()">
+						<button type="button" class="btn btn-secondary">我的预定</button>
+					</a>
+				</div>
+				<!-- <div class="btn-group">
+					<button type="button" id="preBtn" class="btn btn-link btn-lg">
+						<</button> <label id="Date" class="text-danger" style="font-size: 20px;margin: 12px 0px 0px 0px;"></label>
+							<button type="button" id="nextBtn" class="btn btn-link btn-lg">></button>
+				</div> -->
+				<div class="c-datepicker-date-editor c-datepicker-single-editor J-datepicker-day">
+					<i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+					<input type="button" id="Date" autocomplete="off" name="" placeholder="选择日期" class=" c-datepicker-data-input only-date" value="">
+				</div>
+				<div>
+					<button type="submit" class="btn btn-primary submitBtn">提交</button>
+				</div>
+			</div>
+			<div style="width: 100%;height: 0.0625rem;border: solid 1.5px #babdd1;margin: 15px 0px"></div>
+			<!-- 标题 -->
+
+			<!-- 内容 -->
+			<div id='table_time_selected1' class="table_time_selected">
+				<input type="hidden" class="default_time_val" value=""></input>
+			</div>
+			<!-- 内容 -->
+			<div>
+				<div>
+					<span style="font-size: 13px;color:#5960af;">会议室预订说明：</span>
+				</div>
+				<p style="font-size: 13px;color:#5960af;padding-left:2em;margin-bottom:0;">
+					1.公共会议室预约统一从光合系统申请；会议室钥匙由前台保管，预约人提前半个小时领用，方便调试各会议室设备。
+				</p>
+				<p style="font-size: 13px;color:#5960af;padding-left:2em;margin-bottom:0;">
+					2.如遇紧急及重要会议，前台本着重要、紧急优先的原则，根据情况协调安排分配会议室。
+				</p>
+				<p style="font-size: 13px;color:#5960af;padding-left:2em;margin-bottom:0;">3.会议室使用期间使用人员应爱护会议室内各桌椅、设备设施，不破坏；无乱丢垃圾、乱扔纸屑等行为；不得改变会议室设备、家具的位置，会议结束后摆齐桌椅，带走私人物品，关闭会议设备及灯源，关好门窗，并将钥匙归还前台。
+				</p>
+				<p style="font-size: 13px;color:#5960af;padding-left:2em;margin-bottom:0;">4.一个单元格代表半小时。
+				</p>
+			</div>
+		</div>
+		<!-- 全屏遮盖层 -->
+		<div id="bodyCover"></div>
+		<!-- 全屏遮盖层 -->
+	</body>
+</html>

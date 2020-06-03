@@ -1,0 +1,115 @@
+body {
+	font-family: "微软雅黑";
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td {
+	padding: 0;
+	border: solid gray;
+	border-width: 0px 1px 1px 0px;
+}
+
+#bodyDiv {
+	/* border: solid 1px #BBB; */
+	background-color: white;
+	border-radius: 10px;
+	padding: 0px 10px;
+	overflow: "auto";
+}
+
+.headline {
+	height: 5%;
+	line-height: 200%;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.caption {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #333;
+	margin-left: 4px;
+}
+
+#tablecontent td {
+	border: solid #BBB;
+	border-width: 0px 1px 1px 0px;
+}
+
+#header {
+	background-color: #EEE;
+	font-size: 1rem;
+	height: 55px;
+}
+
+#bodyCover {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #EEE;
+	z-index: 0;
+	opacity: 0.1;
+}
+
+p {
+	font-size: 0.8rem;
+	font-family: "微软雅黑";
+	color: red;
+}
+
+.plug-timer-grid {
+	width: 100%;
+}
+
+.plug-timer-grid td,
+.plug-timer-grid th {
+	border: 1px solid #97B4D1;
+	text-align: center;
+	/*cursor:pointer;*/
+}
+
+.Selected {
+	background-color: rgb(102, 162, 243);
+	opacity: 0.5;
+}
+
+.plug-timer-grid {
+	border-collapse: collapse;
+	z-index: 4;
+}
+
+.plug-timer-grid thead tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+
+table td {
+	height: 50px;
+	max-width: 5px;
+	border: 1px solid #137ae1;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	transition: background .5s;
+	-webkit-transition: background .5s;
+}
+
+.plug-timer-grid tbody th {
+	width: 4%;
+}
+
+.plug-timer-grid tbody tr td {
+	width: 2%;
+}
